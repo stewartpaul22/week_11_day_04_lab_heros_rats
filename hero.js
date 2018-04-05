@@ -11,4 +11,8 @@ Hero.prototype.talk = function () {
   return 'My name is ' + this.name;
 };
 
+Hero.prototype.addTask = function (task) {
+  this.tasks.push(task);
+};
+
 module.exports = Hero;
