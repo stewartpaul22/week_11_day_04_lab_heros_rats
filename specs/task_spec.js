@@ -20,9 +20,10 @@ describe('Task', function(){
   it('should have a reward', function(){
     assert.strictEqual(task1.reward, 'Sword');
   });
-  // A task should be able to be marked as completed
-  // it('should be able to update status', function(){
-  //   assert.strictEqual(task1.status, true);
-  // });
+
+  it('should be able to update status', function(){
+    task1.complete();
+    assert.strictEqual(task1.status, true);
+  });
 
 });
